@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 options = webdriver.ChromeOptions()
 prefs = {
-    "download.default_directory": "/Users/aev32/PycharmProjects/QA_GURU_Python_9_7/tmp",
+    "download.default_directory": "C:\\Users\\aev32\\PycharmProjects\\QA_GURU_Python_9_7\\tmp",
     "download.prompt_for_download": False
 }
 options.add_experimental_option("prefs", prefs)
