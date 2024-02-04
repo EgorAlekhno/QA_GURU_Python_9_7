@@ -24,6 +24,9 @@ def test():
     browser.open("https://github.com/pytest-dev/pytest/blob/main/README.rst")
     download_url = browser.element("[data-testid='raw-button']").get(query.attribute("href"))
 
+    # browser.element("[data-testid='download-raw-button']").click()
+    # time.sleep(5)
+
     content = requests.get(url=download_url).content
 
     with open("tmp/readme2.rst", 'wb') as file:
@@ -32,5 +35,3 @@ def test():
     with open("tmp/readme2.rst") as file:
         a = file.read()
         assert "test_answer" in a
-    # browser.element("[data-testid='download-raw-button']").click()
-    # time.sleep(5)
