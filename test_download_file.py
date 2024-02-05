@@ -14,6 +14,7 @@ def test():
     options = webdriver.ChromeOptions()
     prefs = {
         "download.default_directory": TMP_DIR,
+        # "download.default_directory": "C:\\Users\\aev32\\PycharmProjects\\QA_GURU_Python_9_7\\tmp",
         "download.prompt_for_download": False
     }
     options.add_experimental_option("prefs", prefs)
